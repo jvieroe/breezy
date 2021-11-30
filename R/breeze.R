@@ -10,6 +10,8 @@
 
 breeze <- function(data = NULL) {
 
+  validate_breeze(data = data)
+
   vars <- df %>%
     base::names(.) %>%
     tibble::tibble() %>%
