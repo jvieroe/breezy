@@ -2,6 +2,7 @@
 
 export("%>%")
 export(breeze)
+export(cross_breeze)
 import(dplyr)
 import(janitor)
 import(labelled)
