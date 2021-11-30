@@ -16,12 +16,12 @@ cross_breeze <- function(data = NULL,
   validate_cross_breeze(data = data,
                         keep_character = keep_character)
 
-  vars <- df %>%
+  vars <- data %>%
     base::names(.) %>%
     tibble::tibble() %>%
     dplyr::rename(variable = '.')
 
-  temp <- df %>%
+  temp <- data %>%
     labelled::var_label(.) %>%
     base::unlist() %>%
     tibble::tibble() %>%
@@ -31,14 +31,14 @@ cross_breeze <- function(data = NULL,
 
   labs <- base::cbind(vars, temp)
 
-  all_vars <- df %>%
+  all_vars <- data %>%
     base::names(.)
 
   tab_list_temp <- base::list()
 
   for(i in base::seq_along(all_vars)) {
 
-    temp <- df %>%
+    temp <- data %>%
       dplyr::rename(var := !!rlang::sym(all_vars[i]))
 
     tab_temp <- janitor::tabyl(temp$var) %>%
