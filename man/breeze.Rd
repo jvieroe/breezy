@@ -2,7 +2,7 @@
 % Please edit documentation in R/breeze.R
 \name{breeze}
 \alias{breeze}
-\title{Calculate dyadic distances between points \code{i} and \code{j} in a spatial dataset}
+\title{Calculate}
 \usage{
 breeze(data = NULL, keep_character = FALSE)
 }
@@ -15,7 +15,7 @@ breeze(data = NULL, keep_character = FALSE)
 lorem ipsum
 }
 \description{
-This function calculates the geodesic distance between any dyads (pairs of points \code{i} and \code{j}) in a spatial dataset and stores the result in a long tibble
+This function
 }
 \author{
 Jeppe Vierø

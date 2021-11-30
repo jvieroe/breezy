@@ -1,6 +1,6 @@
-#' Calculate dyadic distances between points `i` and `j` in a spatial dataset
+#' Calculate
 #'
-#' This function calculates the geodesic distance between any dyads (pairs of points `i` and `j`) in a spatial dataset and stores the result in a long tibble
+#' This function
 #'
 #' @param data xx
 #' @param keep_character xx. Defaults to `FALSE`
