@@ -3,14 +3,17 @@
 #' This function calculates the geodesic distance between any dyads (pairs of points `i` and `j`) in a spatial dataset and stores the result in a long tibble
 #'
 #' @param data xx
+#' @param keep_character xx. Defaults to `FALSE`
 #' @return lorem ipsum
 #' @author Jeppe Vierø
 #' @import dplyr tibble labelled rlang janitor
 #' @export
 
-breeze <- function(data = NULL) {
+breeze <- function(data = NULL,
+                   keep_character = FALSE) {
 
-  validate_breeze(data = data)
+  validate_breeze(data = data,
+                  keep_character = keep_character)
 
   vars <- df %>%
     base::names(.) %>%

@@ -1,5 +1,6 @@
 #' @noRd
-validate_breeze <- function(data) {
+validate_breeze <- function(data,
+                            keep_character) {
 
   if(base::is.null(data)){
     stop("No data provided")

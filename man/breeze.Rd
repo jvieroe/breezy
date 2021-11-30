@@ -4,10 +4,12 @@
 \alias{breeze}
 \title{Calculate dyadic distances between points \code{i} and \code{j} in a spatial dataset}
 \usage{
-breeze(data = NULL)
+breeze(data = NULL, keep_character = FALSE)
 }
 \arguments{
 \item{data}{xx}
+
+\item{keep_character}{xx. Defaults to \code{FALSE}}
 }
 \value{
 lorem ipsum
