@@ -4,6 +4,7 @@
 #'
 #' @param data xx
 #' @param keep_character xx. Defaults to `FALSE`
+#' @param cross xx
 #' @return lorem ipsum
 #' @author Jeppe Vierø
 #' @import dplyr tibble labelled rlang janitor

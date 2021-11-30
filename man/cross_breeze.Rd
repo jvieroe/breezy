@@ -9,6 +9,8 @@ cross_breeze(data = NULL, cross = NULL, keep_character = FALSE)
 \arguments{
 \item{data}{xx}
 
+\item{cross}{xx}
+
 \item{keep_character}{xx. Defaults to \code{FALSE}}
 }
 \value{
