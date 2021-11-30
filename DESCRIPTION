@@ -1,5 +1,5 @@
 Package: breezy
-Title: What the Package Does (One Line, Title Case)
+Title: create (cross)tables from SPSS data on the fly
 Version: 0.0.0.9000
 Authors@R: 
     person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
@@ -10,4 +10,4 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Imports: 
-    magrittr
+    magrittr, janitor (>= 2.1.0), rlang (>= 0.4.12), labelled (>= 2.9.0), tibble (>= 3.1.5), dplyr (>= 1.0.7)
