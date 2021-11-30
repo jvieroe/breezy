@@ -60,6 +60,19 @@ validate_cross_breeze <- function(data,
     stop("Invalid 'keep_character' provided. Must be logical")
   }
 
+  if(is.null(cross)){
+    stop("No 'cross' variable provided")
+  }
+
+  if(!is.character(cross)){
+    stop("Invalid 'cross' argument provided, must be a character")
+  }
+
+  if(!cross %in% base::names(data)){
+    stop("'cross' variable is not in data")
+  }
+
+
   if(base::any(base::sapply(data, base::is.numeric) == TRUE)){
     warning("Data contains numeric variables. These will be discarded")
 
