@@ -4,7 +4,7 @@
 \alias{cross_breeze}
 \title{Calculate}
 \usage{
-cross_breeze(data = NULL, cross_var = NULL, keep_character = FALSE)
+cross_breeze(data = NULL, cross = NULL, keep_character = FALSE)
 }
 \arguments{
 \item{data}{xx}

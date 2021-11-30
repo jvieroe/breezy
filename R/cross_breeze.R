@@ -10,10 +10,11 @@
 #' @export
 
 cross_breeze <- function(data = NULL,
-                         cross_var = NULL,
+                         cross = NULL,
                          keep_character = FALSE) {
 
   validate_cross_breeze(data = data,
+                        cross = cross,
                         keep_character = keep_character)
 
   vars <- base::names(data) %>%
