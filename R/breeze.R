@@ -15,13 +15,11 @@ breeze <- function(data = NULL,
   validate_breeze(data = data,
                   keep_character = keep_character)
 
-  vars <- data %>%
-    base::names(.) %>%
+  vars <- base::names(data) %>%
     tibble::tibble() %>%
     dplyr::rename(variable = '.')
 
-  temp <- data %>%
-    labelled::var_label(.) %>%
+  temp <- labelled::var_label(data) %>%
     base::unlist() %>%
     tibble::tibble() %>%
     dplyr::rename(label = '.')
