@@ -1,2 +1,6 @@
 ^breezy\.Rproj$
 ^\.Rproj\.user$
+^data-raw$
+^README\.Rmd$
+^\.github$
+^LICENSE\.md$
